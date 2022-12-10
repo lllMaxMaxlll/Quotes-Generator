@@ -19,7 +19,7 @@ const App = () => {
 	};
 
 	return (
-		<div id='container'>
+		<div>
 			<Quotes quote={quote} getQuote={getQuote} />
 		</div>
 	);

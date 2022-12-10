@@ -9,24 +9,23 @@ export const Quotes = (props) => {
 	}, [props.text]);
 
 	return (
-		<div id='quote-box' className={styles.quotebox}>
+		<div className={styles.quotebox}>
 			<div>
-				<h2 id='text'>
+				<h2>
 					{quoteleft} {props.quote.text} {quoteright}
 				</h2>
-				<p id='author' className={styles.author}>
+				<p className={styles.author}>
 					- {props.quote.author ? props.quote.author : "Unknown"} -
 				</p>
 			</div>
 
-			<div id='buttons' className={styles.buttons}>
+			<div className={styles.buttons}>
 				<div>
 					<a href='https://www.linkedin.com/in/maximiliano-herr-720634227/'>
 						{linkedin}
 					</a>
 				</div>
 				<button
-					id='new-quote'
 					className={styles.cssbuttons_io}
 					onClick={() => props.getQuote()}>
 					<span>New Quote</span>
