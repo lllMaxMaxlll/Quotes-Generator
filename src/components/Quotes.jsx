@@ -21,7 +21,10 @@ export const Quotes = (props) => {
 
 			<div className={styles.buttons}>
 				<div>
-					<a href='https://www.linkedin.com/in/maximiliano-herr-720634227/'>
+					<a
+						href='https://www.linkedin.com/in/maximiliano-herr-720634227/'
+						target='_blank'
+						rel='noreferrer'>
 						{linkedin}
 					</a>
 				</div>
